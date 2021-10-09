@@ -1,0 +1,18 @@
+.carda{
+   box-shadow: 2px 2px 3px darkslateblue;
+  
+}
+
+body{
+   background-color: rgba(240, 230, 140, 0.37);
+}
+
+.ancla{
+   color: rgba(240, 230, 140, 0.726);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.inicio{
+   color: wheat;
+   font-family: fantasy;
+}
