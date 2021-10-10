@@ -56,3 +56,9 @@ body{
    color: rebeccapurple;
    font-family: cursive;
 }
+
+#img{
+   height: 200;
+   width: 100%;
+   background-color: cadetblue;
+}
