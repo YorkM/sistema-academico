@@ -57,8 +57,24 @@ body{
    font-family: cursive;
 }
 
+.img{
+   height: 100%;
+   width: 100%;
+}
 #img{
    height: 200;
    width: 100%;
    background-color: cadetblue;
 }
+
+.enviar{
+   color: white;
+   letter-spacing: 2px;
+   margin-top: 10px;
+   background-color: sandybrown;
+   font-size: 25px;
+   
+}
+
+.contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.contenedor {overflow:hidden;}

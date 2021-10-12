@@ -12,10 +12,10 @@
       <div class="container">
 
         <!-- barra navegacion -->
-        <nav class="navbar navbar-expand-lg  bg-dark mt-3 mb-3 border">
+        <nav class="navbar navbar-expand-lg bg-dark mt-3 mb-3 border">
                 <div class="container-fluid">
                     <img src="public/assets/images/libro.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    <a class="navbar-brand inicio" href="Home">INICIO</a>
+                    <a class="navbar-brand inicio" href="">INICIO</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -78,7 +78,7 @@
                           
                  <?php foreach($images as $image): ?>
                             <div class="card col my-3 carda">
-                                <img src="<?php echo $image[0] ?>"class="card-img-top" height="200px" alt="...">
+                                <img src="<?php echo $image[0] ?>"class="card-img-top imagen" height="200px" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title h"><?php echo $image[1]?></h5>
                                 </div>
@@ -113,7 +113,7 @@
          <!-- fin texto video -->
   
     </div>
-
+                
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>
