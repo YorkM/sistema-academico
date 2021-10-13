@@ -25,13 +25,13 @@
                                 <a class="nav-link ancla active" aria-current="page" href="#">Somos</a>
                             </li>
                             <li class="nav-item">
-                                 <a class="nav-link ancla" href="#">Estudiantes</a>
+                                 <a class="nav-link ancla" href="<?php base_url() ?>Estudiante/index">Estudiantes</a>
                             </li>
                             <li class="nav-item">
                                  <a class="nav-link ancla" href="#">Docentes</a>
                             </li>
                             <li class="nav-item">
-                                 <a class="nav-link ancla" href="#">Matriculas</a>
+                                 <a class="nav-link ancla" href="<?php base_url() ?>Estudiante/matricula">Matriculas</a>
                             </li>
                             <li class="nav-item">
                                  <a class="nav-link ancla" href="#">Eventos</a>

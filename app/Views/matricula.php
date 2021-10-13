@@ -1,30 +1,40 @@
 <?php
 
-        $nombre="";
-        $correo="";
-        $comentario="";
-
-    if(isset($_POST['enviar'])){
-        $nombre = $_POST['nombre'];
-        $correo = $_POST['correo'];
-        $comentario = $_POST['comi'];
+        $matricula="";
+       
+    if(isset($_POST['calcular'])){
+        $matricula = $_POST['matricula'];
     }
+
+    
+    //echo gettype($matricula);
+
+    settype($matricula, "integer");
+    //var_dump($matricula);
+
+    //echo gettype($matricula); 
+
+    $descuento = $matricula * 10 / 100;
+   // var_dump($descuento);
+
+    $total = $matricula - $descuento;
+   
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/assets/css/misestilos.css">
-    <title>Contactenos</title>
+    <title>Matricula</title>
 </head>
 <body>
     <div class="container">
-            <!-- barra navegacion -->
-         <nav class="navbar navbar-expand-lg  bg-dark mt-3 mb-3 border">
+          <!-- barra navegacion -->
+          <nav class="navbar navbar-expand-lg  bg-dark mt-3 mb-3 border">
                 <div class="container-fluid">
                     <img src="../public/assets/images/libro.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                     <a class="navbar-brand inicio" href="../Home/">INICIO</a>
@@ -56,44 +66,28 @@
                 </div>
         </nav>
         <!-- barra navegacion -->
-
-        <!-- banner -->
-        <div id="img border">
-            <img src="../public/assets/images/banner.png" class="img border" alt="">
-        </div>
-        <!-- banner -->
-
-         <!-- formulario -->
-        <div class="row  justify-content-center mt-5">
-            <div class="col-md-7">
+        <h1 class="text-center mt-5">Liquidar Matricula</h1>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
                 <form action="" method="post">
-                    <div class="mb-2">
-                        <input type="text" id="nombre" name="nombre" class="form-control border" placeholder="Nombre"> 
-                    </div>
-                    <div class="mb-2">
-                        <input type="text" id="correo" name="correo" class="form-control border" placeholder="Correo Electronico">  
-                    </div>
-                    <div class="form-floating">
-                        <textarea class="form-control" id="comi" name="comi"></textarea>
-                        <label for="floatingTextarea">Comentarios</label>
-                    </div>  
+                    <input type="number" id="matricula" name="matricula" class="form-control border" placeholder="Ingrese el Valor del Programa"> 
                     <div>
-                        <input type="submit" id="enviar" name="enviar" value="ENVIAR" class="enviar btn btn-warning btn-block">
+                        <input type="submit" id="calcular" name="calcular" value="Calcular Matricula" class="calcular btn btn-warning btn-block">
                     </div> 
-                </form>  
-             </div>
+                </form>
+            </div>
         </div>
-      
-      <?php
-          /*  echo "nombre ". $nombre;
-            echo "<br/>";
-            echo "correo ". $correo;
-            echo "<br/>";
-            echo "comentario ". $comentario;*/
-       ?>
-        <!-- formulario -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="alert alert-dark bg-dark" role="alert">
+                    <h5 class="alert"><?php echo "El Valor de la Matricula es.............$". $matricula ?></h5>
+                    <h5 class="alert"><?php echo "El Descuento es................................$". $descuento ?></h5>
+                    <h5 class="alert"><?php echo "El Total a Pagar es............................$". $total ?></h5>
+                </div>
+            </div>
+        </div>
     </div>
-   
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 </body>
 </html>

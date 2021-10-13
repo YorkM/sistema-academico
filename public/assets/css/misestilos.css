@@ -60,11 +60,13 @@ body{
 .img{
    height: 100%;
    width: 100%;
+   margin-top: 50px;
 }
 #img{
    height: 200;
    width: 100%;
    background-color: cadetblue;
+   margin-top: 50px;
 }
 
 .enviar{
@@ -73,7 +75,25 @@ body{
    margin-top: 10px;
    background-color: sandybrown;
    font-size: 25px;
-   
+   border-radius: 20px;
+}
+
+.calcular{
+   color: white;
+   letter-spacing: 2px;
+   margin-top: 10px;
+   background-color: black;
+   font-size: 15px;
+   border-radius: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.alert{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   letter-spacing: 2px;
+   color: white;
+   margin: 0;
+   font-size: 15px;
 }
 
 .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
